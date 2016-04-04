@@ -1,47 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>index.html</title>
+  <link rel="stylesheet" href="css/styles.css">
 
-  <style>
-    html,
-    body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-    }
+  <!-- google fonts -->
+  <script>
+     WebFontConfig = {
+      google: {
+        families: ['Open+Sans::latin', 'Playfair+Display:400,400italic,700italic,700,900,900italic:latin']
+      }
+    };
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    (function() {
+       var wf = document.createElement('script');
+       wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+       wf.type = 'text/javascript';
+       wf.async = 'true';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(wf, s);
+     })();
+  </script>
+  <!-- end of google fonts -->
 
-    main {
-      font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
-      font-variant: small-caps;
-      font-size: 27px;
-      text-align: center;
-      letter-spacing: 3px;
-      color: #ddd;
-    }
-
-    .sell-me-sleep {
-      color: #333;
-    }
-
-    p {
-      margin: 0;
-    }
-  </style>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="path/to/your/jquery"><\/script>')</script>
+  <!-- end of jquery -->
 </head>
+
 <body>
+  <div class="overlay">
+    <div class="container">
+      <h3>Thanks, fam.</h3>
+      <span>I'll be sure to get back to you.</span>
+      <span class="close"></span>
+    </div>
+  </div>
+
   <main>
-    <p>the real jason victorio</p>
-    <p>the real jason victorio</p>
-    <p class="sell-me-sleep">the real jason victorio</p>
-    <p>the real jason victorio</p>
-    <p>the real jason victorio</p>
+    <section class="banner">
+      <div class="container">
+        <h1 class="page-title" data-text="Jason Victorio">Jason Victorio</h1>
+        <div>Web Developer &bull;
+          <a href="https://www.youtube.com/watch?v=NPUFdsHrIjw">Down for whatever</a>
+          </span>
+        </div>
+        <div><a class="contact-me" href="mailto:jgvictorio@gmail.com">jgvictorio@gmail.com</a>
+          <a class="contact-me" href="tel:1-800-hotlinebling">555-justfuckmyshitup</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="serious-business">
+      <div class="container">
+
+        <div class="bullshit">
+          <h2>My anaconda don't</h2>
+          <p>I am available for freelance projects and full-time employment for those willing to pay a large amount of cash.</p>
+          <p>If you would like a quote or more information about working with me, please fill out the form with a detailed description of your project, and I will get back to you A$AP.</p>
+        </div>
+        <div class="nxtlvl-contact-form">
+          <iframe name="hidden_iframe" style="display:none;"></iframe>
+          <form action="https://docs.google.com/forms/d/1HioX9bUIRndWBhoU02kS586nwkEHaR2tZgQFeaCqc_w/formResponse" method="post" target="hidden_iframe" onsubmit="emailValidator()">
+
+            <label for="entry_682196285">Name</label>
+            <input name="entry.682196285" placeholder="Name" value="" id="entry_682196285" dir="auto" aria-label="Name  " title="" type="text">
+
+            <label for="entry_348282968">Email
+              <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+              <span aria-hidden="true">*</span>
+            </label>
+            <input class="email" name="entry.348282968" placeholder="Email" value="" id="entry_348282968" dir="auto" aria-label="Email  Please enter a valid email" aria-required="true" required="" title="Please enter a valid email" type="email">
+
+            <label for="entry_2029282186">Message</label>
+            <textarea name="entry.2029282186" placeholder="You can tell me a little about the project" rows="8" cols="0" id="entry_2029282186" dir="auto" aria-label="Message  "></textarea>
+
+            <input name="draftResponse" value="[,,&quot;-3575572316255993878&quot;]" type="hidden">
+            <input name="pageHistory" value="0" type="hidden">
+            <input name="fbzx" value="-3575572316255993878" type="hidden">
+
+            <input name="submit" value="Submit" id="ss-submit" type="submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <span class="notice">Portfolio and work samples available upon request</span>
+      </div>
+    </footer>
   </main>
+
+  <script>
+    var submitted = false;
+  </script>
+
+  <script src="js/lib.js"></script>
 </body>
+
 </html>
