@@ -38,8 +38,8 @@ gulp.task('css', function() {
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(sass({
-      includePaths: ['scss']
-      // outputStyle: 'compressed'
+      includePaths: ['scss'],
+      outputStyle: 'compressed'
     }))
     .pipe(postcss([
       lost()
