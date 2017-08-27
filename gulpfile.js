@@ -1,11 +1,8 @@
 var gulp = require('gulp')
 var browserSync = require('browser-sync')
-var postcss = require('gulp-postcss')
 var sourcemaps = require('gulp-sourcemaps')
 var autoprefixer = require('gulp-autoprefixer')
-var lost = require('lost')
 var sass = require('gulp-sass')
-var rename = require("gulp-rename")
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -41,9 +38,6 @@ gulp.task('css', function() {
       includePaths: ['scss'],
       outputStyle: 'compressed'
     }))
-    .pipe(postcss([
-      lost()
-    ]))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(path.cssDist))

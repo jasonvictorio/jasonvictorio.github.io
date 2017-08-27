@@ -1,228 +1,42 @@
-$black: #333;
-$black-light: #aaa;
-
-html,
-body,
-main {
-  height: 100%;
+.vh-98 {
+  height: 98vh;
 }
 
-body {
-  // lost-utility: edit;
-  font-family: 'Open sans';
-  color: $black;
-  position: relative;
+.bg-banner {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.9) 100%),
+                    url('../img/bg.jpg');
 }
 
-a, a:visited {
-  color: inherit;
-  transition: color 250ms ease-in-out;
-  text-decoration: none;
-  display: inline-block;
+.playfair {
+  font-family: 'Playfair Display', TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia;
 }
 
-a:hover {
-  color: $black-light;
+.open-sans {
+  font-family: 'Open sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.banner {
-  height: 98%;
-  lost-align: center;
-  background-color: $black;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%), url('../img/bg.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  .container {
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-  }
+.bg-transparent-30 {
+  background-color: rgba(0,0,0, 0.3);
 }
 
-.page-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 5em;
-  // font-style: italic;
-  font-weight: bold;
-  // letter-spacing: 0.09em;
-  // text-transform: uppercase;
-
-}
-
-
-.serious-business {
-  .container {
-    lost-center: 980px 15px;
-    padding: 10em 15px 3em;
-  }
-}
-
-@media (min-width: 768px) {
-  .bullshit,
-  .nxtlvl-contact-form {
-    lost-column: 1/2;
-  }
-}
-
-@media (max-width: 767px) {
-  .serious-business {
-    .container {
-      lost-center: 980px 15px;
-      padding: 5em 15px 3em;
-    }
-  }
-
-  .nxtlvl-contact-form {
-    margin-top: 3em;
-  }
-
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
-  font-weight: 700;
-  font-style: italic;
-  letter-spacing: -1px;
-  margin-bottom: 2rem;
-}
-
-
-p {
-  line-height: 2em;
-  text-indent: 2em;
-
-  & + p {
-    margin-top: 1em;
-  }
-}
-
-
-.nxtlvl-contact-form {
-  label {
-    display: none;
-  }
-}
-
-input,
-textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1em;
-  font-family: 'Open Sans';
-  font-size: 1em;
-  border: 2px solid $black-light;
-  padding: 1em;
-  background: transparent;
-  transition: all 250ms ease-in-out;
-  box-shadow: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-
-  &:focus,
-  &:active,
-  &:hover {
-    border-color: $black;
-    outline: 0;
-  }
-
-  &::-moz-focus-inner{
-    border: 0;
-    outline : 0;
-  }
-}
-
-
-footer {
-  lost-center: 980px 15px;
-  text-align: right;
-  padding: 2em 15px;
-}
-
-
-.overlay {
-  background: rgba(0,0,0, 0.7);
-  z-index: 100;
-  lost-align: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  position: fixed;
-  visibility: hidden;
-  z-index: -1;
+.visibility {
   opacity: 0;
-  transition: all 250ms ease-in-out;
+  visibility: hidden;
 
   &.active {
-    visibility: visible;
     opacity: 1;
-    z-index: 100;
-  }
-
-  .container {
-    background-color: #fff;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.2) 100%), url('../img/overlay.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #fff;
-    text-shadow: 2px 4px 3px rgba(0,0,0,1);
-    padding: 1.5em 15px;
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-
-    h3 {
-      font-size: 2.5em;
-      font-family: 'Playfair Display';
-      font-style: italic;
-    }
-
-
-
-
-    .close {
-      display: block;
-      width: 18px;
-      height: 18px;
-      position: absolute;
-      top: 10px;
-      right: 8px;
-      cursor: pointer;
-
-      &:hover {
-        &:before,
-        &:after {
-          background-color: $black;
-        }
-      }
-    }
-
-    .close:before,
-    .close:after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 5px;
-      background-color: #fff;
-      top: 7px;
-      right: -1px;
-      transition: background-color 250ms ease-in-out;
-
-    }
-
-    .close:before{
-      transform: rotate(45deg);
-    }
-    .close:after{
-      transform: rotate(-45deg);
-    }
+    visibility: visible;
   }
 }
 
+.ta-1 {
+  transition: all 300ms ease-in-out;
+}
+
+.h-b--black-70 {
+  &:active,
+  &:hover,
+  &:focus {
+    border-color:  $black-70;
+  }
+}
