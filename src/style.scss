@@ -6,3 +6,13 @@
 body {
   font-family: 'Roboto';
 }
+
+.bebas-neue {
+  font-family: 'Poppins';
+}
+
+@media (orientation: portrait) {
+  .xxx {
+    transform: rotate(90deg);
+  }
+}
