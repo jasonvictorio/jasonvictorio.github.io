@@ -1,18 +1,5 @@
 @import 'css/reset.scss';
-@import "~tailwindcss/base";
-@import "~tailwindcss/components";
-@import "~tailwindcss/utilities";
 
-body {
-  font-family: 'Roboto';
-}
-
-.bebas-neue {
-  font-family: 'Poppins';
-}
-
-@media (orientation: portrait) {
-  .xxx {
-    transform: rotate(90deg);
-  }
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
