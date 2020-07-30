@@ -3,3 +3,22 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.font-title {
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: 'Libre Baskerville';
+}
+
+a {
+  text-decoration: underline;
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
