@@ -2,11 +2,11 @@ module.exports = {
   purge: [],
   theme: {
     screens: {
-      xl: { max: '1366px' },
-      lg: { max: '1024px' },
-      md: { max: '768px' },
-      sm: { max: '480px' },
-      xs: { max: '361px' },
+      xs: '361px',
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1366px',
     },
     extend: {},
   },
